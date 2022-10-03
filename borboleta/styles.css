@@ -1,0 +1,103 @@
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: rgb(255, 228, 179);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+
+}
+
+.container{
+  min-width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.asa{
+  background: rgb(145, 24, 182);
+  border-radius: 100% 5%;
+  width: 30%;
+  height: 30%;
+  filter: brightness(.75);
+}
+
+.asa-1{
+  transform: scale(2.00) rotateY(175deg)
+  rotate(1deg) translate(-6%);
+  filter: brightness(1);
+  border-radius: 15% 55% 15% 25%;
+
+}
+.asa-2{
+  transform: scale(2.00) rotateY(180deg)
+  rotate(1deg) translate(-112%, -48%);
+  filter: brightness(.8);
+  border-radius: 55% 15% 10% 15%;
+} 
+
+.asa-3{
+  transform: scale(1.60) rotateY(180deg)
+  rotate(180deg) translate(20%, 20%);
+  filter: brightness(.45);
+  border-radius: 5% 65% 15% 15%;
+}
+
+.asa-4{
+  transform: scale(1.60) rotateY(180deg)
+  rotate(-180deg) translate(130%, 82%);
+  filter: brightness(.45);
+  border-radius: 65% 5% 15% 15%;
+
+}
+.asa-5{
+  background-color: rgb(191, 164, 255);
+  transform: scale(0.7) rotateY(180deg)
+  rotate(-110deg) translate(340%,110%);
+  filter: brightness(.45);
+}
+.asa-6{
+  background-color: rgb(191,164,255);
+  transform: scale(0.7) rotateY(170deg)
+  rotate(-110deg) translate(550%,-140%);
+  filter: brightness(.45);
+}
+
+
+.corpo{
+  background: rgb(82, 42, 13);
+  position: relative;
+  margin: -160% auto 0 auto;
+  width: 20%;
+  height: 20%;
+  border-radius: .7rem;
+}
+
+.corpo::before{
+  content: "";
+  position: absolute;
+  background: inherit;
+  width: 80%;
+  height: 130%;
+  top: 105%;
+  left: 50%;
+  transform: translate(-50%) perspective(5px) rotateX(-.6deg);
+  border-radius: 0 0 .7rem .7rem;
+}
+
+.corpo::after{
+  content: "";
+  position: absolute;
+  background: #1f1e1e35;
+  width: 85%;
+  height: 40%;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%) perspective(5px) rotateX(-.6deg);
+}
